@@ -23,23 +23,14 @@
 		.st8 {font-size:1em}
 		.st9 {fill:#b5cb85;fill-opacity:0.5;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
 		.st10 {fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.2}
-		.st11 {marker-end:url(#mrkr13-220);stroke:#000000;stroke-dasharray:10.8,6.48;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
-		.st12 {fill:#000000;fill-opacity:1;stroke:#000000;stroke-opacity:1;stroke-width:0.22222222222222}
-		.st13 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
-		.st14 {fill:#000000;font-family:Arial;font-size:0.833336em}
+		.st11 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st12 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st13 {fill:#000000;font-family:Arial;font-size:0.666664em}
+		.st14 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
 		.st15 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
 	]]>
 	</style>
 
-	<defs id="Markers">
-		<g id="lend13">
-			<path d="M 3 1 L -0 0 L 3 -1 L 3 1 " style="stroke:none"/>
-		</g>
-		<marker id="mrkr13-220" class="st12" v:arrowType="13" v:arrowSize="2" v:setback="13.5" refX="-13.5" orient="auto"
-				markerUnits="strokeWidth">
-			<use xlink:href="#lend13" transform="scale(-4.5,-4.5) "/>
-		</marker>
-	</defs>
 	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
 		<v:userDefs>
 			<v:ud v:nameU="UMLDiagramType" v:val="VT0(0):26"/>
@@ -565,13 +556,23 @@
 				</g>
 			</g>
 		</g>
-		<g id="shape91-215" v:mID="91" v:groupContext="shape" transform="translate(925.311,184.988) rotate(90)">
+		<g id="group91-215" transform="translate(222.803,-397.417)" v:mID="91" v:groupContext="group">
 			<title>Sheet.91</title>
-			<desc>HTTPS</desc>
-			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="35.4331" cy="652.945" width="70.87" height="0"/>
-			<path d="M0 652.94 L61.15 652.94" class="st11"/>
-			<rect v:rectContext="textBkgnd" x="19.044" y="646.945" width="32.7785" height="12.0001" class="st13"/>
-			<text x="19.04" y="655.94" class="st14" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>HTTPS</text>		</g>
+			<g id="shape117-216" v:mID="117" v:groupContext="shape" transform="translate(656.913,582.645) rotate(90)">
+				<title>Sheet.117</title>
+				<desc>HTTPS</desc>
+				<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+				<v:textRect cx="35.1496" cy="652.945" width="70.3" height="0"/>
+				<path d="M0 652.94 L70.3 652.94" class="st11"/>
+				<rect v:rectContext="textBkgnd" x="22.0386" y="648.145" width="26.2224" height="9.59985" class="st12"/>
+				<text x="22.04" y="655.34" class="st13" v:langID="1031"><v:paragraph v:horizAlign="1"/><v:tabList/>HTTPS</text>			</g>
+			<g id="shape118-221" v:mID="118" v:groupContext="shape" transform="translate(7.93701,1297.95) rotate(180)">
+				<title>Triangle</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(12):26"/>
+				</v:userDefs>
+				<path d="M8.55 652.94 L3.97 645.01 L-0.61 652.94 L8.55 652.94 Z" class="st14"/>
+			</g>
+		</g>
 	</g>
 </svg>

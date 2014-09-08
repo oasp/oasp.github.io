@@ -14,12 +14,12 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="revealjs/css/reveal.min.css">
-		<link rel="stylesheet" href="revealjs/css/theme/sky.css" id="theme">
-		<link rel="stylesheet" href="revealjs/css/js4ng-beginners.css">
+		<link rel="stylesheet" href="../../lib/revealjs/css/reveal.min.css">
+		<link rel="stylesheet" href="../../lib/revealjs/css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/js4ng-beginners.css">
 
 		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+		<link rel="stylesheet" href="../../lib/revealjs/lib/css/zenburn.css">
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -45,7 +45,7 @@
 			<div class="slides">
 				<section>
 					<h1 class="no_upper">JavaScript*</h1>
-					<h4>* for Those Wanting to Get Started with <img class="middle" src="revealjs/img/AngularJS-large.png" height="54" width="191"></h4>
+					<h4>* for Those Wanting to Get Started with <img class="middle" src="img/AngularJS-large.png" height="54" width="191"></h4>
 					<p>
 						<small>Marek Matczak</small>
 					</p>
@@ -54,7 +54,7 @@
 				<section>
 					<h2>Inspired by</h2>
 					<div>
-						<img src="revealjs/img/javascript_the_good_parts.jpg" >
+						<img src="img/javascript_the_good_parts.jpg" >
 					</div>
 					<div>
 						<small>Picture taken from: <a href="http://frightanic.com/category/software-development/javascript/">http://frightanic.com/category/software-development/javascript/</a></small>
@@ -256,7 +256,7 @@ var person = (function () {
 person.letMeIntroduceMyself();  // My name is John Example
 person.details; // undefined
 					</code></pre>
-					<p>is widely used for programming <i>services</i> in <img class="middle" src="revealjs/img/AngularJS-large.png" height="54" width="191"></p>
+					<p>is widely used for programming <i>services</i> in <img class="middle" src="img/AngularJS-large.png" height="54" width="191"></p>
 				</section>
 				
 				<section>
@@ -279,7 +279,7 @@ johnExample = new Person();
 johnExample.letMeIntroduceMyself();  // My name is John Example
 johnExample.firstName; // 'John' - no privacy
 					</code></pre>
-					<p>is used for defining <i>controllers</i> in <img class="middle" src="revealjs/img/AngularJS-large.png" height="54" width="191"></p>
+					<p>is used for defining <i>controllers</i> in <img class="middle" src="img/AngularJS-large.png" height="54" width="191"></p>
 				</section>
 				
 				<section>
@@ -302,7 +302,7 @@ child.firstName = 'Joe';
 parent.letMeIntroduceMyself();  // My name is John Example
 child.letMeIntroduceMyself();  // My name is Joe Example
 					</code></pre>
-					<p>In <img class="middle" src="revealjs/img/AngularJS-large.png" height="54" width="191"> <i>scopes</i> prototypically inherit from each other</p>
+					<p>In <img class="middle" src="img/AngularJS-large.png" height="54" width="191"> <i>scopes</i> prototypically inherit from each other</p>
 				</section>
 				
 				<section>
@@ -342,7 +342,7 @@ joeExample.firstName; // undefined
 				<section>
 					<h2>Summary</h2>
 					<div>
-						<img src="revealjs/img/dcrockford-js.jpg" >
+						<img src="img/dcrockford-js.jpg" >
 					</div>
 					<div>
 						<small>http://www.flickr.com/photos/natekoechley/2853942919/</small>
@@ -353,8 +353,8 @@ joeExample.firstName; // undefined
 
 		</div>
 
-		<script src="revealjs/lib/js/head.min.js"></script>
-		<script src="revealjs/js/reveal.min.js"></script>
+		<script src="../../lib/revealjs/lib/js/head.min.js"></script>
+		<script src="../../lib/revealjs/js/reveal.min.js"></script>
 
 		<script>
 
@@ -375,12 +375,12 @@ joeExample.firstName; // undefined
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: '../../lib/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../../lib/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../lib/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../../lib/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../../lib/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../../lib/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 

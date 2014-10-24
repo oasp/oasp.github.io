@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--<link rel="icon" href="favicon.ico">-->
 
-    <title>Open Application Standard Platform</title>
+    <title>OASP - Open Application Standard Platform</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -23,33 +24,40 @@
 </head>
 
 <body>
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <div class="navbar-brand" style="padding-top: 1px" href="./index.html"><img title="OASP" alt="OASP" src="img/logo/oasp-logo-72dpi.png"/></div>
+      </div>
+      <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">OASP</a></li>
+            <li><a href="./oasp4j/index.html">Java</a></li>
+            <li><a href="./oasp4js/index.html">JavaScript</a></li>
+            <li><a href="./oasp4net/index.html">.NET</a></li>
+         </ul>
+      </div>
     </div>
-</div>
-
-<!-- Main jumbotron for a primary marketing message or call to action -->
-<div class="jumbotron">
-    <div class="container">
+  </div>
+  <div class="container">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
         <h1>Welcome to OASP!</h1>
         <p>The Open Application Standard Platform (OASP) provides a solution to building applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions. <a class="btn btn-primary btn-lg" role="button" href="https://github.com/oasp" target="_blank"><img src="img/GitHub-Mark-Light-32px.png">&nbsp; Follow us on GitHub &raquo;</a></p>
         <p>Our continuous integration environment can be found <a class="btn btn-primary btn-lg" role="button" href="http://oasp-ci.cloudapp.net/" target="_blank">here &raquo;</a></p>
         <p>Our current sample application (the JavaScript client and the Java backend) can be found <a class="btn btn-primary btn-lg" role="button" href="http://oasp-ci.cloudapp.net/oasp4j-sample/jsclient/#/main/sign-in" target="_blank">here &raquo;</a></p>
         <p>It is open and free - see our <a href="terms-of-use.html">terms of use</a>.</p>
+      </div>
     </div>
-</div>
-
-<div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
+      <!-- Example row of columns -->
+      <div class="row">
         <div class="col-md-4">
             <h2>Java</h2>
             <p><a class="btn btn-default" href="/oasp4j" role="button">View details &raquo;</a></p>
@@ -62,16 +70,12 @@
             <h2>.Net</h2>
             <p><a class="btn btn-default" href="/oasp4net" role="button">View details &raquo;</a></p>
         </div>
-    </div>
-
-    <hr>
-
+      </div>
+      <hr>
     <footer>
-        <p>&copy; OASP 2014</p>
+      <p>&copy; OASP 2014</p>
     </footer>
-</div> <!-- /container -->
-
-
+  </div>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

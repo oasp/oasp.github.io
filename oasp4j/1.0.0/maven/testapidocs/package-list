@@ -1,0 +1,5 @@
+io.oasp.gastronomy.restaurant.general.common
+io.oasp.gastronomy.restaurant.salesmanagement.logic.impl
+io.oasp.gastronomy.restaurant.salesmanagement.persistence.impl.dao
+io.oasp.module.rest.service.impl
+io.oasp.module.security.common.impl.accesscontrol

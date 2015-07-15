@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>oasp4j-ide - Auto-configured development environment</title>
+
+    <meta name="description" content="Automate setup, configuration and update of your development environment">
+    <meta name="author" content="Jörg Hohwiller">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="revealjs/css/reveal.css">
+    <link rel="stylesheet" href="revealjs/css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="css/presentation.css">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="revealjs/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section id="slide-titel">
+          <p><img src="img/oasp-logo.png"></p>
+             <h1>oasp4j-ide</h1>
+             <h3>Auto-configured development environment</h3>
+          <p>
+            <small>Jörg Hohwiller</small>
+          </p>
+        </section>
+        
+        <section id="slide-author">
+          <img style="position:absolute;right:0px;width:7em;" src="img/hohwiller.jpg">
+          <div  style="padding-right:8em;">
+          <p>Jörg Hohwiller
+          </p>
+          <ul>
+            <li>Working with Java since 1.1 (1998)</li>
+            <li>Starting with IBM Visual Age 4 Java</li>
+            <li>Big lover and hater of Eclipse since 1.x</li>
+            <li>Open Source developer<br/>(maven, oasp, mmm, etc.)</li>
+            <li>Working for Capgemini since 2002</li>
+          </ul>
+          </div>
+        </section>
+        <section id="slide-motivation1">
+          <h1>Motivation 1/3</h1>
+          <p>To get started simply follow our instructions</p>
+          <img src="img/setup1.png">
+        </section>
+        <section id="slide-motivation2">
+          <h1>Motivation 2/3</h1>
+          <p>Its easy with our step by step instructions</p>
+          <img src="img/setup2.png">
+          <p class="fragment">When you reached step 591 you can start developing.</p>
+          <p class="fragment">...if everything went correct</p>
+          <p class="fragment">...and you are lucky</p>
+        </section>
+        <section id="slide-motivation3">
+          <h1>Motivation 3/3</h1>
+          <div style="display: flex; height: 150px;">
+          <img src="img/Problem1.png">
+          <img src="img/Problem2.png" class="fragment">
+          </div>
+          <div style="display: flex; height: 300px;">
+          <img src="img/Problem3.png" class="fragment">
+          <img src="img/Problem4.png" class="fragment">
+          </div>
+          
+          <img src="img/Error5.png" style="position: absolute; left: 1em; top: 5em;" class="fragment">
+          <img src="img/Error6.png" style="position: absolute; left: 2em; top: 6em;" class="fragment">
+          <img src="img/Error7.png" style="position: absolute; left: 3em; top: 7em;" class="fragment">
+          <img src="img/Error8.png" style="position: absolute; left: 4em; top: 8em;" class="fragment">
+          <img src="img/Error9.png" style="position: absolute; left: 5em; top: 9em;" class="fragment">
+          <img src="img/Error10.png" style="position: absolute; left: 6em; top: 10em;" class="fragment">
+          <img src="img/Error11.png" style="position: absolute; left: 7em; top: 11em;" class="fragment">
+          <img src="img/Error12.png" style="position: absolute; left: 8em; top: 12em;" class="fragment">
+          <img src="img/Error13.png" style="position: absolute; left: 9em; top: 13em;" class="fragment">
+          <img src="img/Error14.png" style="position: absolute; left: 5.5em; top: 10.5em;" class="fragment">
+        </section>
+        <section id="slide-requirements">
+          <h1>Requirements</h1>
+          <div style="text-align: left;">
+          <p><img src="img/clock.png" class="icon"/>Setup and configure IDE in less than 10 minutes</p>
+          <p><img src="img/gear.png" class="icon"/>Automation to prevent manual mistakes</p>
+          <p><img src="img/update.png" class="icon"/>Easy update of tools+configs during project lifecycle</p>
+          <p><img src="img/edit.png" class="icon"/>Flexibility and easy customization to different needs</p>
+          <p><img src="img/multiple.png" class="icon"/>Multiple projects/PC and workspaces/project</p>
+          </div>
+        </section>
+        <section id="slide-eclipse">
+          <h1>Desired Result:</h1>
+          <img src="img/eclipse-integrated.png">
+        </section>
+        <section id="slide-approaches">
+          <h1>Failed Approaches</h1>
+          <ul>
+            <li>Create VM with tools and configs (also <a href="http://blog.zenika.com/index.php?post/2014/10/07/Setting-up-a-development-environment-using-Docker-and-Vagrant">Docker+Vagrant</a>)<br/>
+            ⇒ VM Overhead? Update during project lifecycle?</li>
+            <li>Eclipse Plugin (own, <a href="https://code.google.com/a/eclipselabs.org/p/workspacemechanic/">workspacemechanic</a>, etc.)<br/>
+            ⇒ Insufficient, breaks with every new Eclipse release, etc.</li>
+            <li><a href="https://projects.eclipse.org/projects/tools.oomph">OOMPH</a><br/>
+            ⇒ Documentation? Versions of Plugins? Installation of Java, Maven, NodeJS, ...?</li>
+          </ul>
+        </section>
+        <section id="slide-solution1">
+          <h1>oasp4j-ide Principles</h1>
+          <ul>
+            <li>KISS</li>
+            <li>Works with almost any version of Java, Eclipse, etc.</li>
+            <li>Installation = Extract ZIP file(s)</li>
+            <li>No VM, no system/path/registry tweak</li>
+            <li>Setup/Update = Run script</li>
+            <li>Project owner is in full control of code-style</li>
+            <li>Developer is in full control of UI and personal settings</li>
+          </ul>
+        </section>
+        <section id="slide-solution2">
+          <h1>oasp4j-ide Concept</h1>
+            <img src="img/oasp4j-ide-files.png">
+        </section>
+        <section id="slide-solution3">
+          <h1>oasp4j-ide Live-Demo</h1>
+        </section>
+        <section id="slide-questions">
+          <div><h1>Questions?</h1><img src="https://cdn4.iconfinder.com/data/icons/VistaICO_Toolbar-Icons/128/Symbol-Help.png" style="float:middle"/></div>
+        </section>
+        <section id="slide-credits">
+          <h1>Credits</h1>
+          Thanks to these authors for free icons (slides are <a href="http://www.gnu.org/copyleft/gpl.html">GPL</a>):
+          <ul>
+            <li><a href="https://www.iconfinder.com/icons/5999/clock_time_icon#size=128"><img src="img/clock.png" class="iconsmall"/> by Alessandro Rei</a></li>
+            <li><a href="https://www.iconfinder.com/icons/2471/gear_icon#size=128"><img src="img/gear.png" class="iconsmall"/> by Pavel InFeRnODeMoN</a></li>
+            <li><a href="https://www.iconfinder.com/icons/105251/again_arrow_circulation_exchange_flip_flipping_refresh_reload_repeat_rotate_sync_synchronize_update_icon#size=64"><img src="img/update.png" class="iconsmall"/> by Aha-Soft Team</a></li>
+            <li><a href="https://www.iconfinder.com/icons/3218/add_task_edit_icon#size=128"><img src="img/edit.png" class="iconsmall"/> by Everaldo Coelho</a></li>
+            <li><a href="https://www.iconfinder.com/icons/226576/layers_icon#size=128"><img src="img/multiple.png" class="iconsmall"/> by Cole Bemis</a></li>
+            <li><a href="https://www.iconfinder.com/icons/285690/file_zip_icon#size=128"><img src="img/zip.png" class="iconsmall"> by Paomedia</a></li>
+            <li><a href="https://www.iconfinder.com/icons/49263/help_question_mark_icon#size=128"><img src="img/questions.png" class="iconsmall"/> by VistaICO.com</a></li>
+          </ul>
+          <br/>
+          And of course Screenshots from <a href="http://eclipse.org">Eclipse</a>. 
+        </section>
+      </div>
+    </div>
+    <script src="revealjs/lib/js/head.min.js"></script>
+    <script src="revealjs/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+        /*autoSlide: 5000,*/
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+        
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'revealjs/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

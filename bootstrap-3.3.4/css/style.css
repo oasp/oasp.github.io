@@ -1,0 +1,291 @@
+@media(max-width:1024px){.affix{position:static}}
+.faqHeader{
+  font-size:27px;
+  margin-top: 20px;
+  margin-bottom: 30px !important;
+}
+.panel-heading [data-toggle="collapse"]:after {
+    font-family: 'FontAwesome';
+    content: "\f0da"; /* "play" icon */
+    float: right;
+    color: #00A1D5;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    color: #666;
+}
+.panel-heading>h4>a:hover{
+  color:#00A0D7;
+  text-decoration:none
+}
+.panel-heading>h4>a:focus{
+  color:#00A0D7;
+  text-decoration:none
+}
+.panel-default {
+  border-color: #ededed;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #ededed;
+}
+h4.panel-title {
+  font-weight: 300;
+}
+
+body {
+  color: #444;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+a:hover{color:#00A0D7;}
+a{color:#00A0D7;}
+
+/* ............CARRUSEL............ */
+.btn-group-lg > .btn, .btn-lg {
+  font-size:22px;
+  margin-top:20px;
+}
+.btn-primary {
+  background-color: #337ab7;
+  border: none;
+  color: #fff;
+}
+.carousel-control {
+  border-radius: 6px;
+}
+.carousel{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.bs-example{
+	margin: 20px;
+}
+.item{
+    background: #fff;    
+    text-align: center;
+    height: 600px;
+    border-radius: 6px;
+}
+.carousel-control.left {
+  background: #fff;
+  
+}
+.carousel-control.right {
+background: #fff;
+}
+.smallcenter {
+  margin: 0px auto;
+  position: relative;
+  width: 75%;
+  height: 550px;
+}
+.smallcenter>h1{
+    margin: 0;     
+    padding-top: 20px;
+    font-size: 60px;
+    font-family: "Helvetica Neue", sans-serif; 
+    color: #FFF;   
+}
+.smallcenter>h2{
+	margin: 0;     
+    padding-top: 0px;
+    font-size: 25px;
+    font-family: "Helvetica Neue", sans-serif; 
+    color: #888;   
+    margin-bottom:10px;
+}
+.smallcenter > p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 140%;
+  margin: 0;
+  padding-top: 20px;
+  color: #888;
+  width:  90%;
+}
+.smallcenter>img{
+	padding-top: 20px;
+	width: 75%;
+}
+/* ............FIN CARRUSEL........... */
+.jumbotron .h1, .jumbotron h1 {
+  font-size: 58px;
+}	
+.jumbotron>img{
+
+	width: 100%;
+}
+.affix {
+  top: 250px;
+  width: 150px;
+}
+ 
+@media (min-width: 1200px) {
+  .affix, .affix-bottom {
+    width: 150px;
+  }         
+}
+
+.affix-bottom {
+  position: absolute;
+  width: 150px;
+}
+
+@media(min-width:1024px){h3>a>img{
+	height: 144px;
+	width: 400px;
+}}
+@media(max-width:1024px){h3>a>img{
+	padding-top: 15px;
+	width: 40%;
+	height: auto;
+}}
+
+input#search{
+	width:15px;
+	height:15px;
+}
+input#input {
+  border: medium none;
+  border-radius: 1px;
+  font-size: 12px;
+  height: 25px;
+  padding: 0 8px;
+  width: 150px;
+}
+/*a>img{
+	width: 100%;
+}*/
+.halfimg{
+  width: 50%;
+  margin-top:10px;
+}
+.thirdimg{
+  width: 70%;
+  margin-top:10px;
+}
+.fullimg{
+  width: 100%;
+}
+.navbar-collapse#menu {
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 4px;
+}
+.navbar-toggle#menubutton {
+	float: left;
+	width:100%;
+}
+.navbar-default{
+	background: #004860;
+  color: #ffffff;
+  border:none;
+}
+.navbar-default .navbar-link {
+  color: #F2F2F2;
+}
+.navbar-default .navbar-link:hover {
+  color: #00a0d7;
+  text-decoration: none;
+}
+ #menunav.navbar-default {
+  background: none !important;
+  border: medium none;
+  color: #444;
+}
+.logos a{
+  margin: 0 12px;
+}
+.page-header {
+  border-bottom: 1px solid #00a0d7;
+  margin: 40px 0 10px;
+  padding-bottom: 12px;
+}
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #ddd -moz-use-text-color -moz-use-text-color;
+  border-image: none;
+  border-style: solid none none;
+  border-width: 1px 0 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.well {
+  background-color: #f2f2f2;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 19px;
+}
+.callout {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #eee;
+  border-image: none;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px 1px 1px 5px;
+  margin: 20px 0;
+  padding: 20px;
+}
+.callout-blue {
+  border-left-color: #00a0d7;
+}
+.table-bordered-blue > thead > tr > td, .table-bordered-blue > thead > tr > th {
+  border-bottom-color: #00a0d7 !important;
+  border-bottom-width: 2px !important;
+}
+
+.glyphicon.glyphicon-chevron-right {
+	color: #888;
+}
+
+.glyphicon.glyphicon-chevron-left {
+	color: #888;
+}
+
+.carousel-indicators li {
+	border: 1px solid #888;
+}
+
+.carousel-indicators li.active {
+	background:#ccc;
+}
+
+.masthead{
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px){
+   .jumbotron {
+		padding: 28px 20px;
+	}
+	.carousel{
+     height:500px;
+   }
+}

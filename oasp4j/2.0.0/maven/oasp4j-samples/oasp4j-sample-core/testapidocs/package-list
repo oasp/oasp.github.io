@@ -1,0 +1,6 @@
+io.oasp.gastronomy.restaurant.general.common
+io.oasp.gastronomy.restaurant.general.configuration
+io.oasp.gastronomy.restaurant.offermanagement.batch.impl.productimport
+io.oasp.gastronomy.restaurant.salesmanagement.batch.impl.billexport
+io.oasp.gastronomy.restaurant.salesmanagement.dataaccess.impl.dao
+io.oasp.gastronomy.restaurant.salesmanagement.logic.impl

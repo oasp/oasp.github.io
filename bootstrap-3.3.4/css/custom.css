@@ -1,0 +1,231 @@
+        body {
+            padding-top: 0px;
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+        
+        .logo-small {
+            color: #004860;
+            font-size: 50px;
+        }
+        
+        .fa {
+            color: #004860;
+        }
+        
+        .jumbotron {
+            position: relative;
+            border: 0px;
+            /*background: url("../../images/test.jpg");*/
+            background-color: #004860;
+            /*background-color:transparent !important;*/
+            color: #fff;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .jumbotron .h1,
+        .jumbotron h1 {
+            font-size: 58px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            /*text-transform: uppercase;*/
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .text {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .container {
+            padding: 40px 0px;
+        }
+        
+        .navbar-header {
+            margin-top: 3px;
+        }
+        
+        .navbar .container {
+            padding: 10px;
+        }
+        
+        .nav-tabs {
+            border-bottom: 2px solid #DDD;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:focus,
+        .nav-tabs > li.active > a:hover {
+            border-width: 0;
+        }
+        
+        .nav-tabs > li > a {
+            border: none;
+            color: #666;
+        }
+        
+        .navbar .nav li a {
+            padding: 10px 15px;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            background-color: #004860;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #fff !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #00a0d7 !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        
+        .nav-tabs > li.active > a,
+        .nav-tabs > li > a:hover {
+            border: none;
+            color: #4285F4 !important;
+            background: transparent;
+        }
+        
+        .nav-tabs > li > a::after {
+            content: "";
+            background: #4285F4;
+            height: 2px;
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            bottom: -1px;
+            transition: all 250ms ease 0s;
+            transform: scale(0);
+        }
+        
+        .nav-tabs > li.active > a::after,
+        .nav-tabs > li:hover > a::after {
+            transform: scale(1);
+        }
+        
+        #getStarted a[href='oasp4js/oasp4js_getstarted.html'] {
+            margin-left: 10px;
+        }
+        
+        .tab-pane {
+            padding: 15px 0;
+        }
+        
+        .tab-content {
+            padding: 20px
+        }
+        
+        #universityActivities i {
+            font-size: 180px;
+        }
+        
+        footer {
+            background-color: #004860;
+            padding: 20px 50px 15px 50px !important;
+        }
+        
+        footer .list-inline > li span {
+            font-size: 1.15em;
+        }
+        
+        footer .list-inline > li ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+        
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        footer .list-inline,
+        footer .list-inline a {
+            color: white;
+        }
+        
+        .slideAnimation {
+            visibility: hidden;
+        }
+        
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {}

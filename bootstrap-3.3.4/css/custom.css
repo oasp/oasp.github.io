@@ -157,6 +157,11 @@ h4 {
     padding: 15px 0;
 }
 
+.tab-pane img {
+    height: 280px;
+    margin: 0 auto;
+}
+
 .tab-content {
     padding: 20px
 }

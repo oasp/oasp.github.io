@@ -51,30 +51,124 @@
     </div>
 
     <!--OASP overview-->
-    <div id="overview" class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Open Application Standard Platform</h2>
-                <p class="text">The OASP is a solution to building business applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions.
-                    <br>
-                    <br>It provides a complete reference implementation and IDE for your well architected, robust and modern web application.</p>
-                <p>It is open and free - see our <a href="terms-of-use.html">terms of use</a>.</p>
-                <a href="#getStarted">
-                    <button class="btn btn-success btn-lg">Get started</button>
-                </a>
+    <div class="container-fluid">
+        <div id="overview" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Open Application Standard Platform</h2>
+                    <p class="text">The OASP is a solution to building business applications which combine best-in-class frameworks and libraries as well as industry proven practices and code conventions.
+                        <br>
+                        <br>It provides a complete reference implementation and IDE for your well architected, robust and modern web application.</p>
+                    <p>It is open and free - see our <a href="terms-of-use.html">terms of use</a>.</p>
+                    <a href="#getStarted">
+                        <button class="btn btn-success btn-lg">Get started</button>
+                    </a>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="col-md-5 col-md-offset-1 text-center">
-                <h4>OASP consists of two main building blocks:</h4>
-                <div class="col-md-6 slideAnimation">
-                    <img height="60" alt="java-logo" src="images/logo_java_438x268px.png" />
-                    <p>The <strong>server</strong> implemented with Java and Spring provides services, business logic and persistence.</p>
-                </div>
+    <!--OASP - two main building blocks-->
+    <div class="container-fluid bg-grey">
+        <div id="mainBuildingBlocks" class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>OASP consists of two main building blocks</h2>
+                    <br>
+                    <div class="col-md-5 col-md-offset-1 slideAnimation">
+                        <img height="80" alt="java-logo" src="images/logo_java_438x268px.png" />
+                        <p class="text">The <strong>server</strong> implemented with Java and Spring provides services, business logic and persistence.
+                            <br>
+                            <br>
+                            <a href="oasp4j/oasp4j_overview.html" role="button">
+                                <button class="btn btn-default">Learn more about OASP<b>4j</b></button>
+                            </a>
 
-                <div class="col-md-6 slideAnimation">
-                    <img height="60" alt="javascript-logo" src="images/logo_js_240px.png" />
-                    <p>The <strong>client</strong> implemented with JavaScript provides a responsive application frontend.</p>
+                        </p>
+                    </div>
+
+                    <div class="col-md-5 slideAnimation">
+                        <img height="80" alt="javascript-logo" src="images/logo_js_240px.png" />
+                        <p class="text">The <strong>client</strong> implemented with JavaScript provides a responsive application frontend.
+                            <br>
+                            <br>
+                            <a href="oasp4js/oasp4js_overview.html" role="button">
+                                <button class="btn btn-default">Learn more about OASP<b>4js</b></button>
+                            </a>
+                    </div>
+                    <div class="col-md-1"></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About the Open Application Standard Platform-->
+    <div class="container-fluid">
+        <div id="about" class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>About the Open Application Standard Platform</h2>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="oneFlexibleSolution">
+                            <h3>One flexible Solution</h3>
+                            <p>One integrated flexible solution!</p>
+                            <img height="280" src="images/OneFlexSolution.png" alt="one flexible solution" />
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="architectureBackground">
+                            <h3>Architecture background</h3>
+                            <p>... based on years of CSD-architecture knowledge: Quasar (public) and Architecture Guide (IP).</p>
+                            <img height="280" src="images/CG-QUASAR.png" alt="CG-QUASAR" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img height="280" src="images/CG-QUASAR-Enterprise.png" alt="CG-QUASAR-Enterprise" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <img height="280" src="images/CG-AGuide.png" alt="CG-AGuide" />
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="architecturePatterns">
+                            <h3>Architecture patterns: layering and components</h3>
+                            <p>Separation of concerns through strict layering and thinking in components.</p>
+                            <img height="280" src="images/OASP-Layering.png" alt="OASP-Layering" />
+                            <!--
+                                        <h2>Architecture patterns: coding guide JPA persistence</h2>
+                                        <p>OASP patterns provide best practices on commonly available open source technology ...</p>
+                                        <img height="280" src="images/OASP-Persistence.png" />
+
+                                        <h2>Architecture patterns: coding guide REST services</h2>
+                                        <p>... you will find extensive guidelines how to implement your solution the right way.</p>
+                                        <img height="280" src="images/OASP-Services.png" />
+                                    -->
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="usedTechnologies">
+                            <h3>Used Technologies across all layers</h3>
+                            <p>OASP is built by orchestratation of commonly known and estabished OS-technologies.</p>
+                            <img height="280" src="images/OASP_technologies_used.png" alt="Used technologies" />
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="ide">
+                            <h3>Integrated Development Environment</h3>
+                            <p>Highly integrated development environment, from model to CI.</p>
+                            <img height="280" src="images/IntegratedIDE.png" alt="Integrated IDE" />
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="restaurantExampleClient">
+                            <h3>Restaurant Example Client</h3>
+                            <p>Technical reference Web-UI using open source JS-Framework Angular JS and Bootstrap.</p>
+                            <img height="280" src="images/Example_Angular_Restaurant_Screen.png" alt="Example Angular restaurant screen" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-md-offset-1">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#oneFlexibleSolution" aria-controls="oneFlexibleSolution" role="tab" data-toggle="tab">One flexible solution</a></li>
+                        <li role="presentation"><a href="#architectureBackground" aria-controls="architectureBackground" role="tab" data-toggle="tab">Architecture background</a></li>
+                        <li role="presentation"><a href="#architecturePatterns" aria-controls="architecturePatterns" role="tab" data-toggle="tab">Architecture patterns</a></li>
+                        <li role="presentation"><a href="#usedTechnologies" aria-controls="usedTechnologies" role="tab" data-toggle="tab">Used technologies</a></li>
+                        <li role="presentation"><a href="#ide" aria-controls="ide" role="tab" data-toggle="tab">IDE</a></li>
+                        <li role="presentation"><a href="#restaurantExampleClient" aria-controls="restaurantExampleClient" role="tab" data-toggle="tab">Restaurant example client</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-1"></div>
             </div>
         </div>
     </div>
@@ -169,78 +263,9 @@
         </div>
     </div>
 
-    <!--About the Open Application Standard Platform-->
-    <div id="about" class="container text-center">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>About the Open Application Standard Platform</h2>
-
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="oneFlexibleSolution">
-                        <h3>One flexible Solution</h3>
-                        <p>One integrated flexible solution!</p>
-                        <img height="280" src="images/OneFlexSolution.png" alt="one flexible solution" />
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="architectureBackground">
-                        <h3>Architecture background</h3>
-                        <p>... based on years of CSD-architecture knowledge: Quasar (public) and Architecture Guide (IP).</p>
-                        <img height="280" src="images/CG-QUASAR.png" alt="CG-QUASAR" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img height="280" src="images/CG-QUASAR-Enterprise.png" alt="CG-QUASAR-Enterprise" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img height="280" src="images/CG-AGuide.png" alt="CG-AGuide" />
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="architecturePatterns">
-                        <h3>Architecture patterns: layering and components</h3>
-                        <p>Separation of concerns through strict layering and thinking in components.</p>
-                        <img height="280" src="images/OASP-Layering.png" alt="OASP-Layering" />
-                        <!--
-                                    <h2>Architecture patterns: coding guide JPA persistence</h2>
-                                    <p>OASP patterns provide best practices on commonly available open source technology ...</p>
-                                    <img height="280" src="images/OASP-Persistence.png" />
-
-                                    <h2>Architecture patterns: coding guide REST services</h2>
-                                    <p>... you will find extensive guidelines how to implement your solution the right way.</p>
-                                    <img height="280" src="images/OASP-Services.png" />
-                                -->
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="usedTechnologies">
-                        <h3>Used Technologies across all layers</h3>
-                        <p>OASP is built by orchestratation of commonly known and estabished OS-technologies.</p>
-                        <img height="280" src="images/OASP_technologies_used.png" alt="Used technologies" />
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="ide">
-                        <h3>Integrated Development Environment</h3>
-                        <p>Highly integrated development environment, from model to CI.</p>
-                        <img height="280" src="images/IntegratedIDE.png" alt="Integrated IDE" />
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="restaurantExampleClient">
-                        <h3>Restaurant Example Client</h3>
-                        <p>Technical reference Web-UI using open source JS-Framework Angular JS and Bootstrap.</p>
-                        <img height="280" src="images/Example_Angular_Restaurant_Screen.png" alt="Example Angular restaurant screen" />
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-10 col-md-offset-1">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#oneFlexibleSolution" aria-controls="oneFlexibleSolution" role="tab" data-toggle="tab">One flexible solution</a></li>
-                    <li role="presentation"><a href="#architectureBackground" aria-controls="architectureBackground" role="tab" data-toggle="tab">Architecture background</a></li>
-                    <li role="presentation"><a href="#architecturePatterns" aria-controls="architecturePatterns" role="tab" data-toggle="tab">Architecture patterns</a></li>
-                    <li role="presentation"><a href="#usedTechnologies" aria-controls="usedTechnologies" role="tab" data-toggle="tab">Used technologies</a></li>
-                    <li role="presentation"><a href="#ide" aria-controls="ide" role="tab" data-toggle="tab">IDE</a></li>
-                    <li role="presentation"><a href="#restaurantExampleClient" aria-controls="restaurantExampleClient" role="tab" data-toggle="tab">Restaurant example client</a></li>
-                </ul>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-
     <!--Collaboration-->
-    <div id="collaboration" class="container-fluid bg-grey">
-        <div class="container">
+    <div class="container-fluid">
+        <div id="collaboration" class="container">
             <div class="row">
                 <div class="col-md-8">
                     <h2>Collaboration & Contribution</h2>
@@ -258,8 +283,8 @@
     </div>
 
     <!--University activities-->
-    <div id="universityActivities" class="container-fluid">
-        <div class="container">
+    <div class="container-fluid bg-grey">
+        <div id="universityActivities" class="container">
             <div class="row">
                 <div class="col-md-4 text-center slideAnimation">
                     <i class="fa fa-university fa-5x" aria-hidden="true"></i>
@@ -277,17 +302,19 @@
     </div>
 
     <!--Used technologies-->
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-12 text-center logos">
-                <a href="https://spring.io/" target="_blank"><img alt="spring-logo" src="images/logo_spring.png" /></a>
-                <a href="https://www.java.com/" target="_blank"><img alt="javaee-logo" src="images/logo_javaee.png" /></a>
-                <a href="http://projects.spring.io/spring-boot/" target="_blank"><img alt="springboot-logo" src="images/logo_springboot.png" /></a>
-                <a href="http://www.querydsl.com/" target="_blank"><img alt="querydsl-logo" src="images/logo_querydsl.png" /></a>
-                <a href="http://cxf.apache.org/" target="_blank"><img alt="apache-logo" src="images/logo_apache.png" /></a>
-                <a href="https://angularjs.org/" target="_blank"><img alt="angularjs-logo" src="images/logo_angularjs.png" /></a>
-                <a href="http://flywaydb.org/" target="_blank"><img alt="flyway-logo" height="70" src="images/flyway-logo-tm-sm.png" /></a>
-                <a href="http://maven.apache.org/" target="_blank"><img alt="maven-logo" src="images/logo_maven.png" /></a>
+    <div class="container-fluid">
+        <div id="usedTechnologies" class="container text-center">
+            <div class="row">
+                <div class="col-md-12 text-center logos">
+                    <a href="https://spring.io/" target="_blank"><img alt="spring-logo" src="images/logo_spring.png" /></a>
+                    <a href="https://www.java.com/" target="_blank"><img alt="javaee-logo" src="images/logo_javaee.png" /></a>
+                    <a href="http://projects.spring.io/spring-boot/" target="_blank"><img alt="springboot-logo" src="images/logo_springboot.png" /></a>
+                    <a href="http://www.querydsl.com/" target="_blank"><img alt="querydsl-logo" src="images/logo_querydsl.png" /></a>
+                    <a href="http://cxf.apache.org/" target="_blank"><img alt="apache-logo" src="images/logo_apache.png" /></a>
+                    <a href="https://angularjs.org/" target="_blank"><img alt="angularjs-logo" src="images/logo_angularjs.png" /></a>
+                    <a href="http://flywaydb.org/" target="_blank"><img alt="flyway-logo" height="70" src="images/flyway-logo-tm-sm.png" /></a>
+                    <a href="http://maven.apache.org/" target="_blank"><img alt="maven-logo" src="images/logo_maven.png" /></a>
+                </div>
             </div>
         </div>
     </div>
@@ -337,7 +364,6 @@
 <!-- JavaScript import -->
 <script src="bootstrap-3.3.4/js/jquery-1.11.2.min.js"></script>
 <script src="bootstrap-3.3.4/js/bootstrap.min.js"></script>
-
 
 <script>
     $(document).ready(function () {

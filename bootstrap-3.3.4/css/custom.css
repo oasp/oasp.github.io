@@ -65,12 +65,8 @@ h4 {
     margin-bottom: 30px;
 }
 
-.container-fluid {
-    padding: 40px 50px;
-}
-
 .container {
-    padding: 40px 0px;
+    padding: 60px 0px;
 }
 
 .navbar-header {

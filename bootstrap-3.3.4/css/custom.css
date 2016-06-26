@@ -18,6 +18,10 @@ body {
     color: #004860;
 }
 
+.row {
+    max-width: 100%;
+}
+
 .jumbotron {
     position: relative;
     border: 0px;
@@ -26,11 +30,6 @@ body {
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
-}
-
-.jumbotron .h1,
-.jumbotron h1 {
-    font-size: 58px;
 }
 
 h2 {
@@ -69,8 +68,28 @@ h4 {
     padding: 60px 0px;
 }
 
+#oasp4j img, #oasp4js img, #collaboration img {
+    padding: 15px;
+}
+
+#getStarted button {
+    margin: 5px;
+}
+
 .navbar-header {
     margin-top: 3px;
+    max-width: 100%;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline;
+     zoom:1;
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
 }
 
 .navbar .container {
@@ -79,8 +98,6 @@ h4 {
 
 .nav-tabs {
     border-bottom: 2px solid #DDD;
-    display: flex;
-    justify-content: center;
 }
 
 .nav-tabs > li.active > a,
@@ -147,10 +164,6 @@ h4 {
 .nav-tabs > li.active > a::after,
 .nav-tabs > li:hover > a::after {
     transform: scale(1);
-}
-
-#getStarted a[href='oasp4js/oasp4js_getstarted.html'] {
-    margin-left: 10px;
 }
 
 .tab-pane {
@@ -229,11 +242,16 @@ footer .list-inline a {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
+@media only screen and (max-width : 1200px) {
+   .nav-tabs {
+        border-bottom: 0px;
+    }   
+    
+    .navbar-header img {
+        padding: 10px;
+    }
+    
+    footer .list-inline li{
+        padding: 0px;
     }
 }
-
-@media screen and (max-width: 480px) {}

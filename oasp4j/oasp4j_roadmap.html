@@ -58,7 +58,6 @@
 					<nav class="collapse navbar-collapse" role="navigation" id="menu">
 						<ul class="nav nav-justified">
 							<li><a href="oasp4j_overview.html">Overview</a></li>
-							<li><a href="oasp4j_features.html">Features</a></li>
 							<li class="active"><a href="#">Roadmap</a></li>
 							<li><a href="oasp4j_getstarted.html">Getting started</a></li>
 						</ul>
@@ -70,7 +69,7 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Roadmap</h1>
-        <p>OASP V1.5.0 is available since beginning of November 2015. Quarterly releases will be used to complete and maintain the solution.</p>
+        <p>OASP V2.1.0 will be available since June 2016. Quarterly releases will be used to complete and maintain the solution.</p>
       </div>
 
       <div class="row">
@@ -83,17 +82,38 @@
 					<p>
 						<h3><span class="fa fa-cube text-info"></span>  added main features</h3>
 						<ul>
-							<li>Improved test infrastructure, new integration test suite</li>
 							<li>I18N support for server and metadata</li>
-							<li>Auditing Support</li>
-							<li>enhanced IDE package for OASP based on Eclipse Mars</li>
-							<li>server deployment variants, incl. standalone startup</li>
+							<li>Revised package structure, separate jar for API</li>
+							<li>Probably: OAuth2</li>
+							<li>Probably: IDE package based on Oomph</li>
 						</ul>
 					</p>
 	      </div>
 	    </div>
 
-		      <div class="row">
+      <div class="row">
+        <div class="col-lg-12">
+		      <h2 class="page-header">Upcoming June 2016: oasp v2.1.0<small><i class="text-success">Released End of June 2016</i></small></h2>
+	      </div>
+	    </div>
+      <div class="row well">
+        <div class="col-sm-6">
+					<p>
+						<h3><span class="fa fa-cube text-info"></span>  added main features</h3>
+						<ul>
+							<li>Maintenance</li>
+							<li>Bugfix: WAR no longer contained libs twice</li>
+							<li>Upgrade for Apache Commons Collections to v4.1</li>
+							<li>Replaced Criteria-API with QueryDSL completely</li>
+							<li>Changed header to X-CorrelationId</li>
+							<li>Improved test infrastructure for unit tests</li>
+							<li>Enhanced IDE package for OASP based on Eclipse Mars</li>
+						</ul>
+					</p>
+	      </div>
+	    </div>
+
+      <div class="row">
         <div class="col-lg-12">
 		      <h2 class="page-header">oasp v2.0.0<small><i class="text-success">Released End of February 2016</i></small></h2>
 		      <p class="pull-right"><a href="https://github.com/oasp/oasp4j/issues?q=milestone%3Aoasp%3A2.0.0+is%3Aclosed">Release Notes</a></p>
@@ -105,7 +125,10 @@
 						<h3><span class="fa fa-cube text-info"></span>  added main features</h3>
 						<ul>
 							<li>Spring Boot Integration</li>
+							<li>More server deployment variants, incl. standalone startup</li>
 							<li>Upgrade to Apache CXF 3.1.x</li>
+							<li>Updates application template</li>
+							<li>Revised documentation regarding Spring Boot and Batch</li>
 						</ul>
 					</p>
 	      </div>

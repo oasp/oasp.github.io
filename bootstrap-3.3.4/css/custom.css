@@ -56,6 +56,10 @@ h4 {
     margin: 10px;
 }
 
+#mainBuildingBlocks button {
+    margin: 5px;
+}
+
 .text {
     font-size: 19px;
     line-height: 1.375em;
@@ -70,6 +74,7 @@ h4 {
 
 #oasp4j img, #oasp4js img, #collaboration img {
     padding: 15px;
+    height: 180px;
 }
 
 #getStarted button {
@@ -175,12 +180,16 @@ h4 {
     margin: 0 auto;
 }
 
+.img-responsive {
+    margin: 0 auto;
+}
+
 .tab-content {
     padding: 20px
 }
 
 #universityActivities i {
-    font-size: 180px;
+    font-size: 10em;
 }
 
 footer {
@@ -195,6 +204,10 @@ footer .list-inline > li span {
 footer .list-inline > li ul {
     list-style-type: none;
     padding: 0px;
+}
+
+footer .list-inline > li {
+    margin: 5px;
 }
 
 footer .glyphicon {
@@ -254,4 +267,9 @@ footer .list-inline a {
     footer .list-inline li{
         padding: 0px;
     }
+    
+    .row {
+        margin: 0px 10px;
+    }
+    
 }

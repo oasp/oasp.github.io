@@ -85,22 +85,23 @@
                     <div class="col-md-1"></div>
                 </div>
             </div>
-            
+
             <div class="row">
-                                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-center">
                     <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 slideAnimation">
 
-            <a href="oasp4j/oasp4j_overview.html" role="button">
-                                <button class="btn btn-default">Learn more about OASP<b>4j</b></button>
-                        </a></div>
-                                                        <div class="col-md-5 col-sm-5 slideAnimation">
+                        <a href="oasp4j/oasp4j_overview.html" role="button">
+                            <button class="btn btn-default">Learn more about OASP<b>4j</b></button>
+                        </a>
+                    </div>
+                    <div class="col-md-5 col-sm-5 slideAnimation">
 
-                <a href="oasp4js/oasp4js_overview.html" role="button">
-                                <button class="btn btn-default">Learn more about OASP<b>4js</b></button>
-                            </a>
-                                    </div>
-            
-            </div>
+                        <a href="oasp4js/oasp4js_overview.html" role="button">
+                            <button class="btn btn-default">Learn more about OASP<b>4js</b></button>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -125,18 +126,40 @@
                     </div>
 
                     <div role="tabpanel" class="tab-pane" id="architecturePatterns">
-                        <h3>Architecture patterns: layering and components</h3>
-                        <p>Separation of concerns through strict layering and thinking in components.</p>
-                        <img class="img-responsive" src="images/OASP-Layering.png" alt="OASP-Layering" />
-                        <!--
-                                        <h2>Architecture patterns: coding guide JPA persistence</h2>
-                                        <p>OASP patterns provide best practices on commonly available open source technology ...</p>
-                                        <img class="img-responsive" src="images/OASP-Persistence.png" />
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
 
-                                        <h2>Architecture patterns: coding guide REST services</h2>
-                                        <p>... you will find extensive guidelines how to implement your solution the right way.</p>
-                                        <img class="img-responsive" src="images/OASP-Services.png" />
-                                    -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <h3>Architecture patterns: layering and components</h3>
+                                    <p>Separation of concerns through strict layering and thinking in components.</p>
+                                    <img class="img-responsive" src="images/OASP-Layering.png" alt="OASP-Layering" />
+                                </div>
+                                <div class="item">
+                                    <h3>Architecture patterns: coding guide JPA persistence</h3>
+                                    <p>OASP patterns provide best practices on commonly available open source technology ...</p>
+                                    <img class="img-responsive" src="images/OASP-Persistence.png" />
+                                </div>
+                                <div class="item">
+                                    <h3>Architecture patterns: coding guide REST services</h3>
+                                    <p>... you will find extensive guidelines how to implement your solution the right way.</p>
+                                    <img class="img-responsive" src="images/OASP-Services.png" />
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" role="button" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="carousel-control right" role="button" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
                     </div>
 
                     <div role="tabpanel" class="tab-pane" id="usedTechnologies">
@@ -380,7 +403,7 @@
                 var pos = $(this).offset().top;
                 var winTop = $(window).scrollTop();
                 if (pos < winTop + 600) {
-                    $(this).addClass("slide");
+                    $(this).addClass("slider");
                 }
             });
         });

@@ -72,7 +72,9 @@ h4 {
     padding: 60px 0px;
 }
 
-#oasp4j img, #oasp4js img, #collaboration img {
+#oasp4j img,
+#oasp4js img,
+#collaboration img {
     padding: 15px;
     height: 180px;
 }
@@ -86,15 +88,17 @@ h4 {
     max-width: 100%;
 }
 
-.nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline;
-     zoom:1;
+.nav-tabs > li,
+.nav-pills > li {
+    float: none;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
 }
 
-.nav-tabs, .nav-pills {
-    text-align:center;
+.nav-tabs,
+.nav-pills {
+    text-align: center;
 }
 
 .navbar .container {
@@ -175,9 +179,28 @@ h4 {
     padding: 15px 0;
 }
 
-.tab-pane img {
+.tab-pane img,
+.carousel-inner .item img {
     height: 280px;
     margin: 0 auto;
+}
+
+.carousel-indicators li {
+    background-color: #999;
+}
+
+.carousel-indicators .active {
+    background-color: #004860;
+}
+
+.carousel-control.left {
+    background: transparent;
+    color: #004860;
+}
+
+.carousel-control.right {
+    background: transparent;
+    color: #004860;
 }
 
 .img-responsive {
@@ -225,15 +248,15 @@ footer .list-inline a {
     visibility: hidden;
 }
 
-.slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
+.slider {
+    animation-name: slider;
+    -webkit-animation-name: slider;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
 }
 
-@keyframes slide {
+@keyframes slider {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
@@ -244,7 +267,7 @@ footer .list-inline a {
     }
 }
 
-@-webkit-keyframes slide {
+@-webkit-keyframes slider {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
@@ -255,21 +278,17 @@ footer .list-inline a {
     }
 }
 
-@media only screen and (max-width : 1200px) {
-   .nav-tabs {
+@media only screen and (max-width: 1200px) {
+    .nav-tabs {
         border-bottom: 0px;
-    }   
-    
+    }
     .navbar-header img {
         padding: 10px;
     }
-    
-    footer .list-inline li{
+    footer .list-inline li {
         padding: 0px;
     }
-    
     .row {
         margin: 0px 10px;
     }
-    
 }

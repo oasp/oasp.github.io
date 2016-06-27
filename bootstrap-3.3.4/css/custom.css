@@ -25,9 +25,9 @@ body {
 .jumbotron {
     position: relative;
     border: 0px;
-    /*background: url("../../images/test.jpg");*/
-    background-color: #004860;
-    color: #fff;
+    background: url("../../images/test.jpg");
+    background-color: #eee;
+    color: #000;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
 }

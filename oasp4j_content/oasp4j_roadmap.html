@@ -69,12 +69,12 @@
     <div class="container">
       <div class="jumbotron">
         <h1>Roadmap</h1>
-        <p>OASP V2.3.0 is available from End of April 2017. Half-Yearly major releases will be accompanied by minor ones to complete and maintain the solution.</p>
+        <p>OASP V2.4.0 is available from End of June 2017. Half-Yearly major releases will be accompanied by minor ones to complete and maintain the solution.</p>
       </div>
 	  
 	  <div class="row">
         <div class="col-lg-12">
-		      <h2 class="page-header">Upcoming Release: oasp v3.0.0<small><i class="text-danger">Will be released mid of June 2017</i></small></h2>
+		      <h2 class="page-header">Upcoming Release: oasp v3.0.0<small><i class="text-danger">Will be released mid of Novemeber 2017</i></small></h2>
 	      </div>
 	    </div>
       <div class="row well">
@@ -82,10 +82,33 @@
 					<p>
 						<h3><span class="fa fa-cube text-info"></span> main features</h3>
 						<ul>
+							<li>OASP4J Refactoring - Modularisation of Sample application</li>
+							<li>Service-Client and Microservice support for OASP4J</li>
+							<li>OASP integrated Build with JavaScript Client </li>
+						</ul>
+					</p>
+	      </div>
+	    </div>
+	  
+	  <div class="row">
+        <div class="col-lg-12">
+		      <h2 class="page-header">oasp v2.4.0<small><i class="text-success">Released End of June 2017</i></small></h2>
+			  <p class="pull-right"><a href="http://oasp.github.io/oasp4j_content/2.4.0/">Release Notes</a></p>
+	      </div>
+	    </div>
+	  
+	  <div class="row well">
+        <div class="col-sm-6">
+					<p>
+						<h3><span class="fa fa-cube text-info"></span>  added main features</h3>
+						<ul>
 							<li>Spring Boot Upgrade to 1.5.3</li>
-							<li>Reengineering of test architecture</li>
-							<li>Create Integration Tests</li>
-							<li>Refactor Code</li>
+							<li>Exclude Third Party Libraries that are not needed from sample restaurant application</li>
+							<li>Bugfix:Fixed the 'WhiteLabel' error received when tried to login to the sample restaurant application that is deployed onto external Tomcat</li>
+							<li>Bugfix:Removed the API api.org.apache.catalina.filters.SetCharacterEncodingFilter and used spring framework's API org.springframework.web.filter.CharacterEncodingFilter instead</li>
+							<li>Bugfix:Fixed the error "class file for javax.interceptor.InterceptorBinding not found" received when executing the command 'mvn site' when trying to generate javadoc using Maven javadoc plugin</li>
+							<li>Removed the deprecated API io.oasp.module.web.common.base.PropertiesWebApplicationContextInitializer</li>
+							<li>Documentation of the usage of UserDetailsService of Spring Security</li>
 						</ul>
 					</p>
 	      </div>

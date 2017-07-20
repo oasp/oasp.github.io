@@ -1,7 +1,0 @@
-io.oasp.gastronomy.restaurant.general.common
-io.oasp.gastronomy.restaurant.salesmanagement.dataaccess.impl.dao
-io.oasp.gastronomy.restaurant.salesmanagement.logic.impl
-io.oasp.module.beanmapping.common.impl
-io.oasp.module.jpa.dataaccess.base
-io.oasp.module.rest.service.impl
-io.oasp.module.security.common.impl.accesscontrol

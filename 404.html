@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>OASP</title>
+  <base href="http://oasp.github.io/">
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- shim for IE -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!--Markdown Prism css-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism.min.css" rel="stylesheet" />
+<link href="styles.678d16d9b5ee569d1f35.bundle.css" rel="stylesheet"/></head>
+
+<body>
+  <app-root>Loading...</app-root>
+  <script>
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop() > 500) {
+        $(".navbar").addClass("active");
+      } else {
+        //remove the background property so it comes transparent again (in css)
+        $(".navbar").removeClass("active");
+      }
+    });
+
+  </script>
+<script type="text/javascript" src="inline.0d86da719f0d75d60c00.bundle.js"></script><script type="text/javascript" src="polyfills.2c7077544305d3566b7f.bundle.js"></script><script type="text/javascript" src="vendor.b83f5e8502e0ed3cc604.bundle.js"></script><script type="text/javascript" src="main.9c49b0eb62fb8dbbfd7e.bundle.js"></script></body>
+
+</html>

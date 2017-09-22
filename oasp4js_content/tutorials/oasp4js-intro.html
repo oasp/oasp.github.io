@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>OASP4JS - Introduction</title>
+
+		<meta name="description" content="Introduction to the Open Application Standard Platform for JavaScript">
+		<meta name="author" content="Marek Matczak">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="lib/revealjs/css/reveal.min.css">
+		<link rel="stylesheet" href="lib/revealjs/css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/js4ng-beginners.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/revealjs/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/revealjs/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<p><img width="200" src="../../images/oasp4js.png"></p>
+                    <h4>Introduction to</h4>
+                    <h3>the Open Application Standard Platform</h3>
+                    <h4>for JavaScript</h4>
+					<p>
+						<small>Marek Matczak</small>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Outline</h2>
+                    <ol>
+                        <li>What is OASP?</li>
+                        <li>What is OASP4JS going to provide?</li>
+                        <li>How is the work organized?</li>
+                        <li>How do I set up my development environment?</li>
+                        <li>How is the JavaScript client integrated with the Java backend?</li>
+                        <li>How does the current application skeleton work?</li>
+                        <li>What is still to do?</li>
+                    </ol>
+				</section>
+                <section>
+                    <h2>Open Application Standard Platform</h2>
+                    <ul>
+                        <li>originates from the <a href="https://troom.capgemini.com/sites/vcc/default.aspx">APPS Evolve!</a></li>
+                        <li>meets <a>Industrialization</a>'s expectations</li>
+                        <li>is hosted at <a href="http://oasp.github.io">GitHub</a></li>
+                        <li>has three variants:
+                        <ul>
+                            <li>Java (OASP4J)</li>
+                            <li>.Net (OASP4NET)</li>
+                            <li>JavaScript (OASP4JS)</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>JavaScript Platform</h2>
+                    <ul>
+                        <li>has its own repositories and pages at <a href="http://oasp.github.io/oasp4js">GitHub</a></li>
+                        <li>focuses only on the client at the moment</li>
+                        <li>is going to provide:
+                            <ul>
+                                <li>an <a>application template</a> (aka project seed)</li>
+                                <li><a>AngularJS extensions</a> which address typical problems</li>
+                                <li>a <a>sample application</a> built on top of the template showing the extensions working</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How is the work organized?</h2>
+                    <ul>
+                        <li>contributors needs to have a GitHub account -> a photo and a real name is required</li>
+                        <li>tasks and discussions around them are organized in the form of <a href="https://github.com/oasp/oasp4js/issues">GitHub's issues</a></li>
+                        <li>at the moment we have two branches: main and development</li>
+                        <li>we are going to apply the <a href="https://guides.github.com/activities/forking/">social coding</a> approach:
+                            <ul>
+                                <li>contributors fork the oasp4js repository and clone it</li>
+                                <li>once their changes are ready (committed and pushed), they issue a pull request</li>
+                                <li>if the pull request is accepted, the changes are merged into the development branch</li>
+                                <li>stable releases are on the main branch</li>
+                            </ul>
+                        </li>
+                        <li>The Continues Integration environment is set up in the cloud (<a href="http://azure.microsoft.com/">Microsoft Azure</a> / <a href="http://www.capgemini.com/skysight">SkySight</a>) at <a href="http://oasp-ci.cloudapp.net/">http://oasp-ci.cloudapp.net/</a> </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How do I set up my development environment?</h2>
+                    <ol>
+                        <li>install <a href="http://nodejs.org/">Node.js</a>, <a href="http://gruntjs.com/">Grunt</a>, and <a href="http://bower.io/">Bower</a>; for details refer to the <a href="https://github.com/oasp/oasp4js-sample/wiki">GitHub's Wiki</a></li>
+                        <li><a href="https://github.com/oasp/oasp4js-sample/archive/development.zip">download</a> or <a href="https://github.com/oasp/oasp4js-sample/fork">fork</a> the <a href="https://github.com/oasp/oasp4js-sample">oasp4js-sample repository</a></li>
+                        <li>open a command prompt and go to the application’s root directory</li>
+                        <li>type <code>npm install</code>; it installs modules needed by Grunt and (as a post install task) calls <code>bower install</code> which, in turn, installs application’s dependencies</li>
+                        <li>open the project under your IDE - WebStorm or IntelliJ preferred :)</li>
+                    </ol>
+                </section>
+                <section>
+                    <h2>How is the JavaScript client integrated with the Java backend?</h2>
+                    <ul>
+                        <li>JavaScript client
+                            <ul>
+                                <li>under <code>/java</code> there is <code>pom.xml</code> which runs the build using Grunt and creates a Maven module (packaging ZIP) </li>
+                                <li><code>mvn clean install</code> installs the ZIP module containing the JavaScript client in the local repository</li>
+                            </ul>
+                        </li>
+                        <li>Java backend
+                            <ul>
+                                <li>the <code>oasp4j-example-application</code> has a dependency to the ZIP module containing the JavaScript client</li>
+                                <li>the dependency is active only when built with <code>jsclient</code> profile</li>
+                                <li>the maven-war-plugin is configured so that the JS client module overlays the main WAR dependency</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How does the current application skeleton work?</h2>
+                    <ul>
+                        <li>the JS client requires providing REST services by the backend</li>
+                        <li>the JS client itself <a>may</a> be served by the backend</li>
+                        <li>another scenario would be to deploy the JS client e.g. on the Apache <i>httpd</i> which redirects REST services' calls to the backend </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>What is still to do?</h2>
+                    <p>Let us go through <a href="https://github.com/oasp/oasp4js/issues">issues</a>...</p>
+                </section>
+                <section>
+                    <h1>Questions? Comments?</h1>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/revealjs/lib/js/head.min.js"></script>
+		<script src="lib/revealjs/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'zoom', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'lib/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

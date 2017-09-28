@@ -8,6 +8,6 @@ The following resources are available as OSS.<br>Feel free to take a look and co
 - New application template to start new projects with the main supported technologies 
 
 [Component Catalog](https://github.com/oasp/oasp4js-angular-catalog)
-[Tutorial](https://github.com/oasp/oasp-tutorial-sources.)
+[Tutorial](https://github.com/oasp/oasp-tutorial-sources)
 [My Thai Star application](https://github.com/oasp/my-thai-star/tree/develop/angular)
 [Template](https://github.com/oasp/oasp4js-application-template)

@@ -1,11 +1,10 @@
-####  Upcoming release: OASP4J v3.0.0 - "Dash"
+####  Upcoming release: OASP4J v2.5.0 - "Dash"
 
 **Main features**
 
-- End to End Testing Strategy
 - Modularization with more lean approach
 - Integration of admin interface for oasp4j apps (Spring Boot)
-- MyBatis as an optional devonfw module
+- Inclusion of custom staters corresponding to existing OASP4J modules
 
 #### Latest release: OASP4J v2.4.0 - "Courage"
 

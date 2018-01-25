@@ -4,7 +4,7 @@
 
 - Modularization with more lean approach
 - Integration of admin interface for oasp4j apps (Spring Boot)
-- Inclusion of custom staters corresponding to existing OASP4J modules
+- Inclusion of custom starters corresponding to existing OASP4J modules
 
 #### Latest release: OASP4J v2.4.0 - "Courage"
 

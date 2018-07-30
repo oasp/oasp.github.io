@@ -1,0 +1,7 @@
+.used-technologies img {
+    opacity: .5;
+}
+
+.used-technologies img:hover {
+    opacity: 1;
+}

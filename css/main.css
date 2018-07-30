@@ -1,0 +1,454 @@
+/* VARIABLES */
+
+:root {
+  --main-theme-color: #4bbdec;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 85%;
+}
+
+body {
+  position: relative;
+}
+
+div {
+  word-wrap: break-word;
+}
+
+/* CUSTOM STYLES */
+
+.background-devon {
+  background-color: var(--main-theme-color) !important;
+}
+
+.font-regular {
+  font-family: Montserrat-Regular;
+}
+
+.shadow-inset {
+  box-shadow: 0px 0px 200px #4444 inset !important;
+}
+
+/* SLIDESHOW */
+
+.slideshow-image-fit {
+  width: 100%;
+  height: auto;
+}
+
+/* NAVIGATION BAR */
+
+.NAV-MENU {
+  background-color: var(--main-theme-color) !important;
+  /*box-shadow: 1px 1px 5px #222;*/
+}
+
+.NAV-MENU a {
+  color: white !important;
+}
+
+.NAV-MENU a:hover {
+  color: #e6eaeb !important;
+}
+
+.white-band-separator {
+  border-left: 1px solid #fff;
+  height: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#itemWhatsNew {
+  position: fixed;
+}
+
+#itemWhatsNew a {
+  display: inline-block;
+  padding: 0.01em;
+}
+
+#itemXplore {
+  position: fixed;
+}
+
+#itemXplore a {
+  display: inline-block;
+  padding: 0.01em;
+  margin-left: 0.5em;
+}
+
+#itemCommunity {
+  position: fixed;
+}
+
+#itemCommunity a {
+  display: inline-block;
+  padding: 0.01em;
+  margin-left: 0.5em;
+}
+
+#itemResources {
+  position: fixed;
+}
+
+#itemResources a {
+  display: inline-block;
+  padding: 0.01em;
+  margin-left: 0.5em;
+}
+
+@media (max-width: 768px) {
+  #itemXplore,
+  #itemWhatsNew,
+  #itemResources {
+    position: relative;
+    text-align: center;
+  }
+  #titles {
+    font-size: 95%;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  bottom: -100%;
+  background: url('/assets/images/capgemini.png') center no-repeat;
+  font-family: Montserrat-Regular;
+  background-position-y: 250px;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* GETTING STARTED */
+
+.gettingStarted {
+  right: 200px;
+  padding-bottom: 5%;
+}
+
+.gettingStarted img {
+  width: 50px;
+  padding: 0px;
+  margin-left: 30px;
+}
+
+#gettingStarted a {
+  color: #4bbdec !important;
+  text-decoration: none;
+  font-weight: 700 !important;
+}
+
+.sectionGrey {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0px 0px 100px #e2e2e2;
+  box-shadow: inset 0px 0px 100px #e2e2e2;
+}
+
+.DEVONarticle {
+  padding: 10px;
+}
+
+/* DEVON-CONTAINER*/
+
+.DEVON-CONTAINER {
+  padding-top: 80px;
+}
+
+/* DEVON */
+
+.DEVON {
+  font-family: montserrat-light;
+}
+
+.underline-devon-blue:after {
+  content: '';
+  margin-top: .8rem;
+  margin-left: .15rem;
+  height: .3rem;
+  width: 5.5rem;
+  display: block;
+  background-color: var(--main-theme-color);
+}
+
+.link-devon:hover {
+  color: var(--main-theme-color) !important;
+}
+
+.link-devon {
+  color: black !important;
+}
+
+.underline-devon-white:after {
+  content: '';
+  margin-top: .8rem;
+  margin-left: .15rem;
+  height: .3rem;
+  width: 5.5rem;
+  display: block;
+  background-color: white;
+}
+
+.underline-devon-black:after {
+  content: "";
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 6%;
+  left: 47%;
+  background-color: #585657;
+  height: 2px;
+  margin-top: 2%;
+}
+
+.sideline-devon-blue {
+  text-align: center;
+}
+
+.sideline-devon-blue:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  margin-right: 1em;
+  background-color: transparent;
+  height: 1px;
+  line-height: 1px;
+  vertical-align: middle;
+}
+
+.sideline-devon-blue:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  margin-left: 1em;
+  background-color: var(--main-theme-color);
+  height: 1px;
+  line-height: 1px;
+  vertical-align: middle;
+}
+
+.DEVONcolor {
+  color: var(--main-theme-color);
+}
+
+.DEVON .btn {
+  border-radius: 76px;
+}
+
+.DEVON .btn-primary {
+  border-color: var(--main-theme-color);
+  border-width: 2px;
+  background-color: transparent;
+  color: var(--main-theme-color);
+}
+
+.DEVON .btn-primary:hover {
+  background-color: var(--main-theme-color);
+  color: white;
+}
+
+.DEVON .btn-secondary {
+  border-color: white;
+  border-width: 2px;
+  background-color: var(--main-theme-color);
+  color: white;
+}
+
+.DEVON .btn-secondary:hover {
+  background-color: white;
+  color: var(--main-theme-color);
+}
+
+.timeline-icon {
+  background: #fff;
+  color: #58acfa;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-clip: padding-box;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 5px #58acfa;
+  box-shadow: 0 0 0 2px #58acfa;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  float: left;
+}
+
+/* DEVON-SIDEBAR */
+
+.DEVON-SIDEBAR {
+  background-color: white !important;
+  box-shadow: 0 0 20px #4445;
+  padding: 0px;
+  z-index: 1;
+}
+
+.DEVON-SIDEBAR-NO-SHADOW {
+  background-color: white !important;
+  padding: 0px;
+  z-index: 1;
+}
+
+.DEVON-SIDEBAR li {
+  border-left: 6px solid var(--main-theme-color);
+}
+
+.DEVON-SIDEBAR-NO-SHADOW li {
+  border-left: 6px solid var(--main-theme-color);
+}
+
+.DEVON-SIDEBAR a {
+  color: black;
+}
+
+.DEVON-SIDEBAR-NO-SHADOW a {
+  color: black;
+}
+
+.DEVON-SIDEBAR a.active {
+  color: var(--main-theme-color);
+}
+
+.DEVON-SIDEBAR-NO-SHADOW a.active {
+  color: var(--main-theme-color);
+}
+
+.DEVON-SIDEBAR a:hover {
+  color: var(--main-theme-color);
+}
+
+.DEVON-SIDEBAR-NO-SHADOW a:hover {
+  color: var(--main-theme-color);
+}
+
+.DEVONgallery {
+  -webkit-box-shadow: 0 0 30px rgba(68, 68, 68, 0.3);
+  box-shadow: 0 0 30px rgba(68, 68, 68, 0.3);
+  background: #ddd;
+  border-radius: 3px;
+  margin-bottom: 40px;
+  background-color: #4bbdec;
+  text-align: center;
+}
+
+.DEVONgalleryimg {
+  width: auto;
+  height: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.DEVONgallerydiv {
+  background-color: white;
+  padding: 15px;
+  text-align: left;
+  padding-top: 12px;
+  color: #4bbdec;
+  height: 70px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#tab-bar {
+  background: url(/assets/images/corte5.png) -610px -300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 30px rgba(68, 68, 68, 0.3);
+  box-shadow: 0 0 30px rgba(68, 68, 68, 0.3);
+  padding: 40px 0px 30px;
+  background-size: 100%;
+}
+
+#tab-bar .nav-link.active {
+  color: #0275d8 !important;
+  cursor: default;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-bottom: 3px solid #0275d8;
+  border-radius: 0px;
+  margin-bottom: 40px;
+}
+
+#why-devonfw img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+/* DEVONFW GOES OPEN SOURCE*/
+
+.DEVONFW-GOES-OPENSOURCE {
+  background: url('/assets/images/backgrounds/backgroung-laptop.png') right no-repeat;
+  background-size: auto 100% !important;
+}
+
+/* LANDING PAGE - FRAMEWORK SECTION */
+
+.framework-bg {
+  background: url('/assets/images/backgrounds/on_the_flexible_solution.png')
+    center no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+/* COLLABORATION */
+
+#collaboration {
+  background-image: url('/assets/images/backgrounds/github-bg.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;  
+}
+
+/* UNIVERSITY */
+
+#university {
+  background-image: url('/assets/images/backgrounds/university-bg.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.bg-testimonial{
+  background-image: url('/assets/images/testimonials/bg-testimonials.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url('/assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url('/assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: montserrat-light;
+  src: url('/assets/fonts/Montserrat-Light.ttf');
+}
+
+@font-face {
+  font-family: montserrat-Extralight;
+  src: url('/assets/fonts/Montserrat-ExtraLight.ttf');
+}
+
+.anchorSection::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}

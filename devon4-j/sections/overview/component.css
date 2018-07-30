@@ -1,0 +1,37 @@
+#developers-slogan {
+	color: black !important;
+	font-weight: bold !important;
+	font-size: 1.5rem;
+	line-height: 1.1;
+}
+
+#overview-documentation p,
+#overview-modules p, 
+#overview-sample-application p {
+	color: #585657;
+	font-size: 12pt;
+	line-height: 18pt;
+	text-align: center;
+}
+
+#overview-documentation .btn,
+#overview-modules .btn,
+#overview-sample-application .btn {
+	font-size: 12pt !important;
+}
+
+.cut-tl {
+	position: relative;
+}
+
+.cut-tl::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent !important;
+    border-top: 50px solid var(--main-theme-color);
+    clear: both;
+}

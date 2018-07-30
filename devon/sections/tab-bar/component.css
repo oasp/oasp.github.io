@@ -1,0 +1,15 @@
+#cut-bl {
+	position: relative;
+}
+
+#cut-bl::after {
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    width: 0;
+    height: 0;
+    border-right: 100em solid transparent !important;
+    border-bottom: 100em solid var(--main-theme-color);
+    color: white;
+}

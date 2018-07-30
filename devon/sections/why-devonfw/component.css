@@ -1,0 +1,21 @@
+.cut-tr {
+	position: relative;
+}
+
+.cut-tr::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0;
+    height: 0;
+    border-left: 100em solid transparent !important;
+    border-top: 7em solid var(--main-theme-color);
+    clear: both;
+    z-index: 1;
+    clip: rect(auto);
+}
+
+.cut-tr * {
+    z-index: 5;
+}

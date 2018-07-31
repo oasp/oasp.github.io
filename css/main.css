@@ -22,7 +22,7 @@ div {
 /* CUSTOM STYLES */
 
 .background-devon {
-  background-color: var(--main-theme-color) !important;
+  background-color: #4bbdec !important;
 }
 
 .font-regular {
@@ -43,7 +43,7 @@ div {
 /* NAVIGATION BAR */
 
 .NAV-MENU {
-  background-color: var(--main-theme-color) !important;
+  background-color: #4bbdec !important;
   /*box-shadow: 1px 1px 5px #222;*/
 }
 
@@ -173,11 +173,11 @@ div {
   height: .3rem;
   width: 5.5rem;
   display: block;
-  background-color: var(--main-theme-color);
+  background-color: #4bbdec;
 }
 
 .link-devon:hover {
-  color: var(--main-theme-color) !important;
+  color: #4bbdec !important;
 }
 
 .link-devon {
@@ -228,14 +228,14 @@ div {
   position: relative;
   width: 20%;
   margin-left: 1em;
-  background-color: var(--main-theme-color);
+  background-color: #4bbdec;
   height: 1px;
   line-height: 1px;
   vertical-align: middle;
 }
 
 .DEVONcolor {
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .DEVON .btn {
@@ -243,27 +243,27 @@ div {
 }
 
 .DEVON .btn-primary {
-  border-color: var(--main-theme-color);
+  border-color: #4bbdec;
   border-width: 2px;
   background-color: transparent;
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .DEVON .btn-primary:hover {
-  background-color: var(--main-theme-color);
+  background-color: #4bbdec;
   color: white;
 }
 
 .DEVON .btn-secondary {
   border-color: white;
   border-width: 2px;
-  background-color: var(--main-theme-color);
+  background-color: #4bbdec;
   color: white;
 }
 
 .DEVON .btn-secondary:hover {
   background-color: white;
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .timeline-icon {
@@ -299,11 +299,11 @@ div {
 }
 
 .DEVON-SIDEBAR li {
-  border-left: 6px solid var(--main-theme-color);
+  border-left: 6px solid #4bbdec;
 }
 
 .DEVON-SIDEBAR-NO-SHADOW li {
-  border-left: 6px solid var(--main-theme-color);
+  border-left: 6px solid #4bbdec;
 }
 
 .DEVON-SIDEBAR a {
@@ -315,19 +315,19 @@ div {
 }
 
 .DEVON-SIDEBAR a.active {
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .DEVON-SIDEBAR-NO-SHADOW a.active {
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .DEVON-SIDEBAR a:hover {
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .DEVON-SIDEBAR-NO-SHADOW a:hover {
-  color: var(--main-theme-color);
+  color: #4bbdec;
 }
 
 .DEVONgallery {

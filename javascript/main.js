@@ -8,8 +8,8 @@ function loadInsertions(view) {
         $(this).addClass("d-none");
         $(this).load(url.concat("/component.html"), function () {
             loadInsertions($(this));
-            loadMarkdownInsertions($(this));
-            loadAsciidocInsertions($(this));
+            //loadMarkdownInsertions($(this));
+            //loadAsciidocInsertions($(this));
             hideAndShowNetworkElements($(this));
             initTooltips($(this));
             initCarousels($(this));
@@ -21,7 +21,7 @@ function loadInsertions(view) {
         }).appendTo("head");
     });
 }
-
+/*
 function loadMarkdownInsertions(view) {
     var md = window.mdit;
     view.find("insertMd").each(function (i) {
@@ -39,7 +39,7 @@ function loadAsciidocInsertions(view) {
             .then(text => $(this).empty().append(ad.convert(text)))
     });
 }
-
+*/
 function hideAndShowNetworkElements(view) {
     $.ajax({
         url: 'https://troom.capgemini.com/sites/vcc/devon/overview.aspx',

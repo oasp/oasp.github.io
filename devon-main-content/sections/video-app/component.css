@@ -14,3 +14,13 @@
     clear: both;
     clip: rect(auto);
 }
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .container {
+        max-width: 100% !important;
+    }
+}
+
+.mobile-video {
+    padding: 0 !important;
+}

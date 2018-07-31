@@ -1,6 +1,10 @@
 .slideshow-max-height{
-    background-position: center center;
-    background-size: cover;
-    height: 700px;
-    width: 100%;
+    /*background-position: center center;
+    background-size: cover;*/
+    /*width: 100%;*/
+}
+
+.overflow-div{
+    max-height: 800px;
+    overflow: hidden;
 }

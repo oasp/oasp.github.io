@@ -19,3 +19,9 @@
 .cut-tr * {
     z-index: 5;
 }
+
+.DEVONimg {
+    display: block;
+    margin: auto;
+    max-height: : 100px !important;
+}

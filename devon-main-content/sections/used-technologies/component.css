@@ -5,3 +5,8 @@
 .used-technologies img:hover {
     opacity: 1;
 }
+
+.used-technologies img {
+	display: block;
+	margin: auto;
+}

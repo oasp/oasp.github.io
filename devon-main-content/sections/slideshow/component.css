@@ -8,3 +8,10 @@
     max-height: 800px;
     overflow: hidden;
 }
+
+.carousel-caption {
+	margin-bottom: 5%;
+	color: #4BBDEC;
+	/* background: rgba(100, 100, 100, .6); */
+	font-family: 'MavenPro-Bold', sans-serif;
+}

@@ -445,6 +445,16 @@ div {
   src: url('/assets/fonts/Montserrat-ExtraLight.ttf');
 }
 
+@font-face {
+  font-family: MavenPro-Regular;
+  src: url('/assets/fonts/MavenPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: MavenPro-Bold;
+  src: url('/assets/fonts/MavenPro-Bold.ttf');
+}
+
 .anchorSection::before { 
   display: block; 
   content: " "; 

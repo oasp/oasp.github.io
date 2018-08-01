@@ -1,0 +1,12 @@
+.bg-testimonial .carousel-control-prev,
+.bg-testimonial .carousel-control-next {
+	width: 5% !important;
+}
+
+.bg-testimonial .carousel-control-prev {
+	left: -10%;
+}
+
+.bg-testimonial .carousel-control-next {
+	right: -10%;
+}

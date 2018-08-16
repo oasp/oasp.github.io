@@ -6,6 +6,7 @@
 }
 
 #overview-documentation p,
+#overview-code p,
 #overview-modules p, 
 #overview-sample-application p {
 	color: #585657;
@@ -15,6 +16,7 @@
 }
 
 #overview-documentation .btn,
+#overview-code .btn,
 #overview-modules .btn,
 #overview-sample-application .btn {
 	font-size: 12pt !important;

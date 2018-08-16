@@ -135,7 +135,7 @@ div {
 .gettingStarted img {
   width: 50px;
   padding: 0px;
-  margin-left: 30px;
+  /*margin-left: 30px;*/
 }
 
 #gettingStarted a {
@@ -172,6 +172,7 @@ div {
   margin-left: .15rem;
   height: .3rem;
   width: 5.5rem;
+  border-radius: 2px;
   display: block;
   background-color: #4bbdec;
 }
@@ -189,6 +190,7 @@ div {
   margin-top: .8rem;
   margin-left: .15rem;
   height: .3rem;
+  border-radius: 2px;
   width: 5.5rem;
   display: block;
   background-color: white;
@@ -207,7 +209,7 @@ div {
 }
 
 .sideline-devon-blue {
-  text-align: center;
+  text-align: center !important;
 }
 
 .sideline-devon-blue:before {

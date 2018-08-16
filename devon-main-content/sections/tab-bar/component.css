@@ -13,3 +13,41 @@
     border-bottom: 100em solid #4bbdec;
     color: white;
 }
+
+.DEVONgallerydiv {
+    text-align: center !important;
+}
+
+.DEVONgallerydiv h3{
+    font-size: 12pt;
+}
+
+.nav-pills {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+}
+
+.nav-pills>li {
+    float: none;
+}
+
+.scroll-indicator {
+    color: blue;
+}
+
+#tab-bar .col-10 {
+    position: relative;
+}
+
+.scroll-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: linear-gradient(to right, #FFFFFFFF, #FFFFFF00, #FFFFFF00, #FFFFFF00, #FFFFFFFF);
+    width: 100%;
+    height: 50%;
+    z-index: 10;
+}

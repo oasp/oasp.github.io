@@ -1,0 +1,35 @@
+#community-summit-2018-wrapper {
+	background-color: #6348BF;
+	color: white;
+}
+
+#community-summit-2018-wrapper a {
+	color: white;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+#community-summit-2018-wrapper .btn-secondary:hover {
+	background-color: #4bbdec;
+}
+
+.button-wrapper a{
+	text-decoration: none !important;
+}
+
+/*
+.transition-blue {
+	position: relative;
+}
+
+.transition-blue::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-image: linear-gradient(to top, #4BBDEC, #6348BF);
+	bottom: 0;
+	left: 0;
+
+}
+*/

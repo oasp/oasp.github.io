@@ -10,3 +10,16 @@
 .bg-testimonial .carousel-control-next {
 	right: -10%;
 }
+
+.bg-testimonial {
+	padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+	.bg-testimonial {
+		padding: 50px 20px;
+	}
+	#testimonials-slideshow .carousel-item {
+		height: 425px;
+	}
+}

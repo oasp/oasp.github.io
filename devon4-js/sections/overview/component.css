@@ -18,7 +18,7 @@
 #overview-applic-ref .btn,
 #overview-applic-template .btn,
 #overview-sample-application .btn,
-#overview-documentation {
+#overview-documentation .btn{
 	font-size: 12pt !important;
 }
 

@@ -1,0 +1,21 @@
+.framework-bg img {
+	height: 64px;
+	width: auto;
+}
+
+.framework-bg .btn {
+	font-size: 10pt;
+	padding: 5px !important;
+}
+
+@media (min-width: 720px) {
+	.framework-bg img {
+		height: 128px;
+		width: auto;
+	}
+
+	.framework-bg .btn {
+		font-size: 12pt;
+		padding: 10px 15px !important;
+	}
+}

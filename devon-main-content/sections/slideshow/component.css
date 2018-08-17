@@ -1,11 +1,10 @@
-.slideshow-max-height{
-    /*background-position: center center;
-    background-size: cover;*/
-    /*width: 100%;*/
+.slideshow-image-fit {
+  width: 100%;
+  height: auto;
 }
 
-.overflow-div{
-    max-height: 800px;
+.slide-container{
+    max-height: 600px;
     overflow: hidden;
 }
 
@@ -14,4 +13,18 @@
 	color: #4BBDEC;
 	/* background: rgba(100, 100, 100, .6); */
 	font-family: 'MavenPro-Bold', sans-serif;
+}
+
+@media (max-width: 1920px) {
+	.slide-container{
+	    max-height: 600px;
+	    overflow: hidden;
+	}	
+}
+
+@media (min-width: 1920px) {
+	.slide-container{
+	    max-height: 1200px;
+	    overflow: hidden;
+	}	
 }

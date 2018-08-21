@@ -69,3 +69,40 @@ function initTooltips(view) {
 function initCarousels(view) {
     view.find('.carousel').carousel();
 }
+
+function tabScroll(dir) {
+    var tabs = $('#tab-bar-scroll-wrapper li a');
+    var activeTab = 0;
+
+    for(var i = 0; i < tabs.length; i++) {
+        if($(tabs[i]).hasClass('active')) {
+            activeTab = i;
+        }
+    }
+    switch(dir) {
+        case 'left':
+        if(activeTab > 0) {
+            $(tabs[activeTab-1]).trigger("click");
+            $('#tab-bar-scroll-wrapper').animate({
+                scrollLeft: arrayWidth(tabs, activeTab-1)
+            }, 500);
+        }
+        break;
+        case 'right':
+        if(activeTab < tabs.length-1) {
+            $(tabs[activeTab+1]).trigger("click");
+            $('#tab-bar-scroll-wrapper').animate({
+                scrollLeft: arrayWidth(tabs, activeTab+1)
+            }, 500);
+        }
+        break;
+    }
+}
+
+function arrayWidth(a, x) {
+    var result = 0;
+    for(var i = 0; i < x; i++) {
+        result += $(a[i]).width();
+    }
+    return result;
+}

@@ -42,10 +42,10 @@ function loadAsciidocInsertions(view) {
 */
 function hideAndShowNetworkElements(view) {
     $.ajax({
-        url: 'https://troom.capgemini.com/sites/vcc/devon/overview.aspx',
+        url: 'http://de-mucevolve02/',
         dataType: 'jsonp',
         method: 'GET',
-        timeout: 2000,
+        timeout: 3000,
         error: function (hrx, textStatus, error) {
             if (textStatus === 'parsererror') {
                 $('.only-internal').show(removeInvisibility(view));
@@ -55,7 +55,7 @@ function hideAndShowNetworkElements(view) {
                 $('.only-external').show(removeInvisibility(view));
             }
         }
-    });
+    });    
 }
 
 function removeInvisibility(view) {

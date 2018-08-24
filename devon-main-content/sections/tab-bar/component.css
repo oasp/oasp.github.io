@@ -51,3 +51,8 @@
     height: 50%;
     z-index: 10;
 }
+
+#tab-bar-scroll-left, 
+#tab-bar-scroll-right {
+    cursor: pointer;
+}

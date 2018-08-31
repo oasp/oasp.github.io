@@ -30,19 +30,21 @@ function loadMarkdownInsertions(view) {
             .then(text => $(this).empty().append(md.render(text)))
     });
 }
-
+*/
+/*
 function loadAsciidocInsertions(view) {
     var ad = window.ad;
+
     view.find("insertAd").each(function (i) {
         fetch($(this).attr("src"))
-            .then(response => response.text())
-            .then(text => $(this).empty().append(ad.convert(text)))
+            .then(function(result) {console.log(result)})
+            .then(function(text) {console.log()});
     });
 }
 */
 function hideAndShowNetworkElements(view) {
     $.ajax({
-        url: 'http://de-mucevolve02/',
+        url: 'https://troom.capgemini.com/sites/vcc/devon/overview.aspx',
         dataType: 'jsonp',
         method: 'GET',
         timeout: 3000,

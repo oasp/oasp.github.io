@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>devon4ng</title>
+    <script type="text/javascript" src="/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <script type="text/javascript" src="/javascript/main.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".DEVON-SIDEBAR" data-offset="50">
+    <!-- NAVIGATION-->
+    <div class="fixed-top" style="pointer-events: none">
+        <!-- NAV BAR -->
+        <insertHtml url="/html/nav-menu" style="pointer-events: auto"></insertHtml>
+        <!-- SIDE BAR -->
+        <div class="row container-fluid DEVON m-0 px-0 " style="pointer-events: none">
+            <div class="col-12 col-md-3 m-0 p-0">
+                <insertHtml url="/devon4ng/sections/sidenav" style="pointer-events: auto"></insertHtml>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-fluid DEVON DEVON-CONTAINER m-0 px-0">
+        <div class="d-none">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="row m-0 p-0">
+            <!-- GHOST COLUMN-->
+            <div class="col-0 col-md-3 m-0 p-0">
+
+            </div>
+            <!-- CONTENT -->
+            <div class="col-12 col-md-9 m-0 p-0">
+                <insertHtml url="/devon4ng/sections/introduction"></insertHtml>
+                <insertHtml url="/devon4ng/sections/overview"></insertHtml>
+                <insertHtml url="/devon4ng/sections/getting-started"></insertHtml>
+                <insertHtml url="/devon4ng/sections/roadmap"></insertHtml>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <insertHtml url="/html/footer"></insertHtml>
+</body>
+
+</html>

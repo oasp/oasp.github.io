@@ -1,0 +1,9 @@
+.gettingStarted .get-started-title {
+	font-size: 14pt;
+}
+
+@media (min-width: 768px) {
+	.gettingStarted {
+		margin: 0 25%;
+	}
+}

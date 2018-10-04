@@ -1,0 +1,14 @@
+io.oasp.module.service.common.api
+io.oasp.module.service.common.api.client
+io.oasp.module.service.common.api.client.config
+io.oasp.module.service.common.api.client.context
+io.oasp.module.service.common.api.client.discovery
+io.oasp.module.service.common.api.config
+io.oasp.module.service.common.api.constants
+io.oasp.module.service.common.api.header
+io.oasp.module.service.common.api.sync
+io.oasp.module.service.common.base.config
+io.oasp.module.service.common.base.context
+io.oasp.module.service.common.impl
+io.oasp.module.service.common.impl.discovery
+io.oasp.module.service.common.impl.header

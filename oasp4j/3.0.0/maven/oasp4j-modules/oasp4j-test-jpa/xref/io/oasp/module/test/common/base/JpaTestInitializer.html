@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>JpaTestInitializer xref</title>
+<link type="text/css" rel="stylesheet" href="../../../../../../stylesheet.css" />
+</head>
+<body>
+<div id="overview"><a href="../../../../../../../apidocs/io/oasp/module/test/common/base/JpaTestInitializer.html">View Javadoc</a></div><pre>
+<a class="jxr_linenumber" name="L1" href="#L1">1</a>   <strong class="jxr_keyword">package</strong> io.oasp.module.test.common.base;
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   
+<a class="jxr_linenumber" name="L3" href="#L3">3</a>   <strong class="jxr_keyword">import</strong> javax.persistence.EntityManager;
+<a class="jxr_linenumber" name="L4" href="#L4">4</a>   
+<a class="jxr_linenumber" name="L5" href="#L5">5</a>   <strong class="jxr_keyword">import</strong> io.oasp.module.jpa.dataaccess.api.JpaInitializer;
+<a class="jxr_linenumber" name="L6" href="#L6">6</a>   
+<a class="jxr_linenumber" name="L7" href="#L7">7</a>   <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L8" href="#L8">8</a>   <em class="jxr_javadoccomment"> * Helper class giving access to {@link #setJpaEntityManager(EntityManager) set} the {@link EntityManager} for</em>
+<a class="jxr_linenumber" name="L9" href="#L9">9</a>   <em class="jxr_javadoccomment"> * tests.&lt;br&gt;</em>
+<a class="jxr_linenumber" name="L10" href="#L10">10</a>  <em class="jxr_javadoccomment"> * The {@code spring-test} infrastructure is very powerful and does a lot of magic for you. However, in some edge cases</em>
+<a class="jxr_linenumber" name="L11" href="#L11">11</a>  <em class="jxr_javadoccomment"> * you need to understand what is going on behind the scenes to workaround some problems. On case is the regular</em>
+<a class="jxr_linenumber" name="L12" href="#L12">12</a>  <em class="jxr_javadoccomment"> * {@link io.oasp.module.jpa.dataaccess.api.JpaInitializer} that initializes the {@link EntityManager} during the</em>
+<a class="jxr_linenumber" name="L13" href="#L13">13</a>  <em class="jxr_javadoccomment"> * bootstrapping of the spring context and makes it internally available to static methods (e.g.</em>
+<a class="jxr_linenumber" name="L14" href="#L14">14</a>  <em class="jxr_javadoccomment"> * {@link io.oasp.module.jpa.dataaccess.api.JpaHelper#asEntity(io.oasp.module.basic.common.api.reference.Ref, Class)}).</em>
+<a class="jxr_linenumber" name="L15" href="#L15">15</a>  <em class="jxr_javadoccomment"> * However, {@code spring-test} internally reuses the spring context to boost performance if multiple spring tests are</em>
+<a class="jxr_linenumber" name="L16" href="#L16">16</a>  <em class="jxr_javadoccomment"> * run using the same context. However, if then another spring test runs with a different context then that spring</em>
+<a class="jxr_linenumber" name="L17" href="#L17">17</a>  <em class="jxr_javadoccomment"> * context will be setup overwriting the static instance of {@link EntityManager}. Still everything works as expected.</em>
+<a class="jxr_linenumber" name="L18" href="#L18">18</a>  <em class="jxr_javadoccomment"> * But now if another spring-test is executed using a previous configuration that previous spring context will be</em>
+<a class="jxr_linenumber" name="L19" href="#L19">19</a>  <em class="jxr_javadoccomment"> * magically reused by {@code spring-test}. In such case the static instance of {@link EntityManager} has to be set back</em>
+<a class="jxr_linenumber" name="L20" href="#L20">20</a>  <em class="jxr_javadoccomment"> * to the {@link EntityManager} of the current spring context otherwise you will get strange errors in your tests. In</em>
+<a class="jxr_linenumber" name="L21" href="#L21">21</a>  <em class="jxr_javadoccomment"> * order to archive this goal you need to inject the {@link EntityManager} into each of your spring tests and pass it</em>
+<a class="jxr_linenumber" name="L22" href="#L22">22</a>  <em class="jxr_javadoccomment"> * into the {@link #setJpaEntityManager(EntityManager) method} offered here. To simplify your life you can simply derive</em>
+<a class="jxr_linenumber" name="L23" href="#L23">23</a>  <em class="jxr_javadoccomment"> * from {@link SubsystemDbTest},</em>
+<a class="jxr_linenumber" name="L24" href="#L24">24</a>  <em class="jxr_javadoccomment"> */</em>
+<a class="jxr_linenumber" name="L25" href="#L25">25</a>  <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">class</strong> <a href="../../../../../../io/oasp/module/test/common/base/JpaTestInitializer.html">JpaTestInitializer</a> <strong class="jxr_keyword">extends</strong> JpaInitializer {
+<a class="jxr_linenumber" name="L26" href="#L26">26</a>  
+<a class="jxr_linenumber" name="L27" href="#L27">27</a>    <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <a href="../../../../../../io/oasp/module/test/common/base/JpaTestInitializer.html">JpaTestInitializer</a> INSTANCE = <strong class="jxr_keyword">new</strong> <a href="../../../../../../io/oasp/module/test/common/base/JpaTestInitializer.html">JpaTestInitializer</a>();
+<a class="jxr_linenumber" name="L28" href="#L28">28</a>  
+<a class="jxr_linenumber" name="L29" href="#L29">29</a>    <em class="jxr_javadoccomment">/**</em>
+<a class="jxr_linenumber" name="L30" href="#L30">30</a>  <em class="jxr_javadoccomment">   * @param entityManager the {@link EntityManager} to set.</em>
+<a class="jxr_linenumber" name="L31" href="#L31">31</a>  <em class="jxr_javadoccomment">   */</em>
+<a class="jxr_linenumber" name="L32" href="#L32">32</a>    <strong class="jxr_keyword">public</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">void</strong> setJpaEntityManager(EntityManager entityManager) {
+<a class="jxr_linenumber" name="L33" href="#L33">33</a>  
+<a class="jxr_linenumber" name="L34" href="#L34">34</a>      INSTANCE.setEntityManager(entityManager, false);
+<a class="jxr_linenumber" name="L35" href="#L35">35</a>    }
+<a class="jxr_linenumber" name="L36" href="#L36">36</a>  
+<a class="jxr_linenumber" name="L37" href="#L37">37</a>  }
+</pre>
+<hr/>
+<div id="footer">Copyright &#169; 2014&#x2013;2018 <a href="http://oasp.io/oasp4j/maven/team-list.html">OASP-Team</a>. All rights reserved.</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+io.oasp.module.jpa.dataaccess.api
+io.oasp.module.jpa.dataaccess.api.feature
+io.oasp.module.jpa.dataaccess.base
+io.oasp.module.jpa.dataaccess.impl

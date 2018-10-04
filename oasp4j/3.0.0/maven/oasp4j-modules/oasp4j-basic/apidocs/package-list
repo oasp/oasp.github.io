@@ -1,0 +1,6 @@
+io.oasp.module.basic.common.api.config
+io.oasp.module.basic.common.api.query
+io.oasp.module.basic.common.api.reference
+io.oasp.module.basic.common.api.reflect
+io.oasp.module.basic.common.api.to
+io.oasp.module.basic.configuration

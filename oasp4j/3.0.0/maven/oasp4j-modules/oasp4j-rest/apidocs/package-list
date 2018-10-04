@@ -1,0 +1,4 @@
+io.oasp.module.rest.common.api
+io.oasp.module.rest.service.api
+io.oasp.module.rest.service.impl
+io.oasp.module.rest.service.impl.json

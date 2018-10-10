@@ -1,0 +1,7 @@
+= devonfw Website
+
+*Note*: The solely purpose of this repository is the deployment of the devonfw website. 
+The actual page code is pulled from https://github.com/derochs/oasp-new-website/tree/develop.
+
+*This means*: If you'd like to add or modify the page's content, please do so on the `oasp-new-website` repository and afterwards copy the `dist` folder content into this repostitory.
+
